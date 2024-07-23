@@ -14,7 +14,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-43PMFBC7.js"></script>
-    <script src="dist/sidebar_items-DF1C5564.js"></script>
+    <script src="dist/sidebar_items-E105759E.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -143,7 +143,7 @@ Pages
 
 
   <section id="moduledoc">
-<p>Contains utility functions shared between <code class="inline">DashboardFilterParser</code>
+<p>Contains utility functions shared between <code class="inline">LegacyDashboardFilterParser</code>
 and <code class="inline">StatsAPIFilterParser</code>.</p>
   </section>
 
@@ -170,6 +170,14 @@ and <code class="inline">StatsAPIFilterParser</code>.</p>
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#page_regex/1" translate="no">page_regex(expr)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#parse_member_list/1" translate="no">parse_member_list(raw_value)</a>
 
       </div>
@@ -179,6 +187,22 @@ and <code class="inline">StatsAPIFilterParser</code>.</p>
     <div class="summary-row">
       <div class="summary-signature">
         <a href="#remove_escape_chars/1" translate="no">remove_escape_chars(value)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#split_goals/1" translate="no">split_goals(goals)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#split_goals_query_expressions/1" translate="no">split_goals_query_expressions(goals)</a>
 
       </div>
 
@@ -251,6 +275,28 @@ element is either the page path or the event name.</p></div>
 
   </section>
 </section>
+<section class="detail" id="page_regex/1">
+
+  <div class="detail-header">
+    <a href="#page_regex/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">page_regex(expr)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filters/utils.ex#L84" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="parse_member_list/1">
 
   <div class="detail-header">
@@ -283,6 +329,50 @@ element is either the page path or the event name.</p></div>
     <h1 class="signature" translate="no">remove_escape_chars(value)</h1>
 
       <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filters/utils.ex#L23" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="split_goals/1">
+
+  <div class="detail-header">
+    <a href="#split_goals/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">split_goals(goals)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filters/utils.ex#L70" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="split_goals_query_expressions/1">
+
+  <div class="detail-header">
+    <a href="#split_goals_query_expressions/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">split_goals_query_expressions(goals)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/stats/filters/utils.ex#L74" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>

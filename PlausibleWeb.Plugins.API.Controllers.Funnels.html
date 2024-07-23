@@ -8,13 +8,13 @@
     <meta name="project" content="Plausible v0.0.1">
 
 
-    <title>PlausibleWeb.AuthorizeSitesApiPlug — Plausible v0.0.1</title>
+    <title>PlausibleWeb.Plugins.API.Controllers.Funnels — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/html-elixir-FM2CSD74.css" />
 
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-43PMFBC7.js"></script>
-    <script src="dist/sidebar_items-DF1C5564.js"></script>
+    <script src="dist/sidebar_items-E105759E.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -131,16 +131,20 @@ Pages
 
 <h1>
 
-    <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/authorize_sites_api.ex#L1" title="View Source" class="icon-action" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
 
-  <span translate="no">PlausibleWeb.AuthorizeSitesApiPlug</span> 
+  <span translate="no">PlausibleWeb.Plugins.API.Controllers.Funnels</span> 
   <small class="app-vsn" translate="no">(Plausible v0.0.1)</small>
 
 </h1>
 
+
+  <section id="moduledoc">
+<p>Controller for the Funnel resource under Plugins API</p>
+  </section>
 
 
   <section id="summary" class="details-list">
@@ -157,7 +161,7 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#call/2" translate="no">call(conn, opts)</a>
+        <a href="#create/2" translate="no">create(conn, params)</a>
 
       </div>
 
@@ -165,7 +169,39 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#init/1" translate="no">init(options)</a>
+        <a href="#get/2" translate="no">get(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#index/2" translate="no">index(conn, params)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#open_api_operation/1" translate="no">open_api_operation(action)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#shared_security/0" translate="no">shared_security()</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#shared_tags/0" translate="no">shared_tags()</a>
 
       </div>
 
@@ -184,16 +220,16 @@ Pages
       <span class="text">Functions</span>
     </h1>
     <div class="functions-list">
-<section class="detail" id="call/2">
+<section class="detail" id="create/2">
 
   <div class="detail-header">
-    <a href="#call/2" class="detail-link" title="Link to this function">
+    <a href="#create/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">call(conn, opts)</h1>
+    <h1 class="signature" translate="no">create(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/authorize_sites_api.ex#L11" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L20" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -206,16 +242,122 @@ Pages
 
   </section>
 </section>
-<section class="detail" id="init/1">
+<section class="detail" id="get/2">
 
   <div class="detail-header">
-    <a href="#init/1" class="detail-link" title="Link to this function">
+    <a href="#get/2" class="detail-link" title="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">init(options)</h1>
+    <h1 class="signature" translate="no">get(conn, params)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/authorize_sites_api.ex#L7" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L95" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> get(<a href="https://hexdocs.pm/plug/1.16.1/Plug.Conn.html#t:t/0">Plug.Conn.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/plug/1.16.1/Plug.Conn.html#t:t/0">Plug.Conn.t</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="index/2">
+
+  <div class="detail-header">
+    <a href="#index/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">index(conn, params)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L66" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> index(<a href="https://hexdocs.pm/plug/1.16.1/Plug.Conn.html#t:t/0">Plug.Conn.t</a>(), %{}) :: <a href="https://hexdocs.pm/plug/1.16.1/Plug.Conn.html#t:t/0">Plug.Conn.t</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="open_api_operation/1">
+
+  <div class="detail-header">
+    <a href="#open_api_operation/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">open_api_operation(action)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L7" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> open_api_operation(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) :: <a href="https://hexdocs.pm/open_api_spex/3.18.1/OpenApiSpex.Operation.html#t:t/0">OpenApiSpex.Operation.t</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="shared_security/0">
+
+  <div class="detail-header">
+    <a href="#shared_security/0" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">shared_security()</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L1" class="icon-action" rel="help" title="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="shared_tags/0">
+
+  <div class="detail-header">
+    <a href="#shared_tags/0" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">shared_tags()</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/extra/lib/plausible_web/plugins/api/controllers/funnels.ex#L1" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
