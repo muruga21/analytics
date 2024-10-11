@@ -8,13 +8,13 @@
     <meta name="project" content="Plausible v0.0.1">
 
 
-    <title>PlausibleWeb.LastSeenPlug — Plausible v0.0.1</title>
+    <title>PlausibleWeb.Plugs.AuthorizeSiteAccess — Plausible v0.0.1</title>
     <link rel="stylesheet" href="dist/html-elixir-FM2CSD74.css" />
 
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-43PMFBC7.js"></script>
-    <script src="dist/sidebar_items-E105759E.js"></script>
+    <script src="dist/sidebar_items-6CA46EE5.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -131,16 +131,20 @@ Pages
 
 <h1>
 
-    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/last_seen_plug.ex#L1" title="View Source" class="icon-action" rel="help">
+    <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/authorize_site_access.ex#L1" title="View Source" class="icon-action" rel="help">
       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
 
-  <span translate="no">PlausibleWeb.LastSeenPlug</span> 
+  <span translate="no">PlausibleWeb.Plugs.AuthorizeSiteAccess</span> 
   <small class="app-vsn" translate="no">(Plausible v0.0.1)</small>
 
 </h1>
 
+
+  <section id="moduledoc">
+<p>Plug restricting access to site and shared link, when present.</p><p>In order to permit access to site regardless of role:</p><pre><code class="makeup elixir" translate="no"><span class="n">plug</span><span class="w"> </span><span class="nc">AuthorizeSiteAccess</span></code></pre><p>or</p><pre><code class="makeup elixir" translate="no"><span class="n">plug</span><span class="w"> </span><span class="nc">AuthorizeSiteAccess</span><span class="p">,</span><span class="w"> </span><span class="ss">:all_roles</span></code></pre><p>Permit access for a subset of roles only:</p><pre><code class="makeup elixir" translate="no"><span class="n">plug</span><span class="w"> </span><span class="nc">AuthorizeSiteAccess</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6103298466-1">[</span><span class="ss">:admin</span><span class="p">,</span><span class="w"> </span><span class="ss">:owner</span><span class="p">,</span><span class="w"> </span><span class="ss">:super_admin</span><span class="p" data-group-id="6103298466-1">]</span></code></pre><p>Permit access using a custom site param:</p><pre><code class="makeup elixir" translate="no"><span class="n">plug</span><span class="w"> </span><span class="nc">AuthorizeSiteAccess</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9298379658-1">{</span><span class="p" data-group-id="9298379658-2">[</span><span class="ss">:admin</span><span class="p">,</span><span class="w"> </span><span class="ss">:owner</span><span class="p">,</span><span class="w"> </span><span class="ss">:super_admin</span><span class="p" data-group-id="9298379658-2">]</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;site_id&quot;</span><span class="p" data-group-id="9298379658-1">}</span></code></pre><p>or in case where any role is allowed:</p><pre><code class="makeup elixir" translate="no"><span class="n">plug</span><span class="w"> </span><span class="nc">AuthorizeSiteAccess</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0413870824-1">{</span><span class="ss">:all_roles</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;site_id&quot;</span><span class="p" data-group-id="0413870824-1">}</span></code></pre>
+  </section>
 
 
   <section id="summary" class="details-list">
@@ -157,7 +161,7 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#call/2" translate="no">call(conn, opts)</a>
+        <a href="#call/2" translate="no">call(conn, arg)</a>
 
       </div>
 
@@ -165,7 +169,7 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#init/1" translate="no">init(opts)</a>
+        <a href="#init/1" translate="no">init(allowed_roles)</a>
 
       </div>
 
@@ -191,9 +195,9 @@ Pages
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">call(conn, opts)</h1>
+    <h1 class="signature" translate="no">call(conn, arg)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/last_seen_plug.ex#L11" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/authorize_site_access.ex#L76" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
@@ -213,9 +217,9 @@ Pages
       <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature" translate="no">init(opts)</h1>
+    <h1 class="signature" translate="no">init(allowed_roles)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/last_seen_plug.ex#L7" class="icon-action" rel="help" title="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/plugs/authorize_site_access.ex#L43" class="icon-action" rel="help" title="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
